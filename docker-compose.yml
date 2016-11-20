@@ -1,0 +1,28 @@
+version: "2"
+
+services:
+  gdax-influxdb-forwarder:
+    build:
+      context: ./gdax-influxdb-forwarder
+    depends_on:
+      - influxdb
+    environment:
+      - GDAX_SECRET
+      - GDAX_KEY
+      - GDAX_PASSPHRASE
+      - INFLUXDB_IP=influxdb
+      - INFLUXDB_PORT=8086
+
+
+  bitstamp-influxdb-forwarder:
+    build:
+      context: ./bitstamp-influxdb-forwarder
+    depends_on:
+      - influxdb
+#
+  influxdb:
+    image: influxdb:0.13-alpine
+    ports:
+      - "8083:8083"
+      - "8086:8086"
+

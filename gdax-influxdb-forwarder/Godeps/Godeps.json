@@ -1,0 +1,27 @@
+{
+	"ImportPath": "github.com/jrxfive/cx3/gdax-influxdb-forwarder",
+	"GoVersion": "go1.6",
+	"GodepVersion": "v74",
+	"Deps": [
+		{
+			"ImportPath": "github.com/influxdata/influxdb/client/v2",
+			"Comment": "v1.0.0-beta2-6-g0ac9ab0",
+			"Rev": "0ac9ab0f39b04c12197dd57e0983d0f2470e68cc"
+		},
+		{
+			"ImportPath": "github.com/influxdata/influxdb/models",
+			"Comment": "v1.0.0-beta2-6-g0ac9ab0",
+			"Rev": "0ac9ab0f39b04c12197dd57e0983d0f2470e68cc"
+		},
+		{
+			"ImportPath": "github.com/influxdata/influxdb/pkg/escape",
+			"Comment": "v1.0.0-beta2-6-g0ac9ab0",
+			"Rev": "0ac9ab0f39b04c12197dd57e0983d0f2470e68cc"
+		},
+		{
+			"ImportPath": "github.com/preichenberger/go-coinbase-exchange",
+			"Comment": "0.2.2-6-gbb9723c",
+			"Rev": "bb9723c8f1a94d7342da68c73aca7a30d99a694d"
+		}
+	]
+}
